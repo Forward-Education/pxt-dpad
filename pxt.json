@@ -1,0 +1,24 @@
+{
+    "name": "pxt-dpad",
+    "version": "0.1.0",
+    "description": "Forward Education D-Pad Module for Jacdac on micro:bit",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:jacdac/pxt-jacdac#v1.9.42"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "gamepad-constants.ts",
+        "gamepad-client.ts",
+        "fwd-dpad.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
