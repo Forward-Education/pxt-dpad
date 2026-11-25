@@ -11,7 +11,10 @@ In MakeCode for micro:bit (V2):
 
 1. Open **Extensions** in the toolbox
 2. Paste this repository's URL and search
-3. Add the extension — a **fwdSensors** category appears in the toolbox
+3. Add the extension. The D-pad's blocks appear in the **Buttons** category,
+   in the "D-pad" group (next to the rotary dial, in kits that have one)
+
+In code the D-pad is `fwdSensors.dpad1`; only the toolbox placement is Buttons.
 
 ### Blocks
 

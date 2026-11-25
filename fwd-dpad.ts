@@ -35,8 +35,21 @@ class FwdDpadSubscription {
     }
 }
 
-//% color="#00796B" icon="" weight=90
-//% groups="['Buttons', 'Events', 'Advanced']"
+// The D-pad's blocks are shown in the Buttons drawer, next to the rotary dial:
+// each block carries blockNamespace="fwdButtons". The code name stays
+// fwdSensors.dpad1 so programs written against v0.1.1 and earlier still work.
+//
+// This Buttons drawer declaration is copied verbatim from
+// pxt-fwd-base/common/drawers.ts, so the drawer looks the same whether or not
+// fwd-base is loaded too. Do not change it without changing fwd-base to match.
+// (Up to v0.1.1 this file set its own colour, weight and groups on the shared
+// Sensors drawer, which competed with fwd-base's settings in combined kits.)
+//% block="Buttons"
+//% color=#00A660
+//% icon=""
+//% weight=203
+namespace fwdButtons {}
+
 namespace fwdSensors {
 
     //% fixedInstances
@@ -103,8 +116,8 @@ namespace fwdSensors {
          */
         //% blockId=fwd_dpad_is_pressed
         //% block="$this $direction is pressed"
-        //% group="Buttons"
-        //% weight=100
+        //% blockNamespace="fwdButtons" group="D-pad"
+        //% weight=95
         fwdIsPressed(direction: FwdDpadDirection): boolean {
             // Pure numeric test rather than the inherited isButtonDown(), which
             // takes a jacdac.GamepadButtons-typed parameter — passing a plain
@@ -119,8 +132,8 @@ namespace fwdSensors {
          */
         //% blockId=fwd_dpad_any_pressed
         //% block="$this any direction is pressed"
-        //% group="Buttons"
-        //% weight=95
+        //% blockNamespace="fwdButtons" group="D-pad"
+        //% weight=90
         fwdAnyPressed(): boolean {
             return this.buttons() != 0
         }
@@ -130,8 +143,8 @@ namespace fwdSensors {
          */
         //% blockId=fwd_dpad_x
         //% block="$this horizontal"
-        //% group="Buttons"
-        //% weight=90
+        //% blockNamespace="fwdButtons" group="D-pad"
+        //% weight=85
         fwdHorizontal(): number {
             const mask = this.buttons()
             if (mask & FwdDpadDirection.Left) return -1
@@ -153,8 +166,8 @@ namespace fwdSensors {
          */
         //% blockId=fwd_dpad_y
         //% block="$this vertical"
-        //% group="Buttons"
-        //% weight=85
+        //% blockNamespace="fwdButtons" group="D-pad"
+        //% weight=80
         fwdVertical(): number {
             const mask = this.buttons()
             if (mask & FwdDpadDirection.Up) return 1
@@ -167,8 +180,8 @@ namespace fwdSensors {
          */
         //% blockId=fwd_dpad_on_pressed
         //% block="on $this $direction pressed"
-        //% group="Events"
-        //% weight=100
+        //% blockNamespace="fwdButtons" group="D-pad"
+        //% weight=110
         fwdOnPressed(direction: FwdDpadDirection, handler: () => void): void {
             this.subscriptions.push(
                 new FwdDpadSubscription(direction as number, true, handler)
@@ -181,8 +194,8 @@ namespace fwdSensors {
          */
         //% blockId=fwd_dpad_on_released
         //% block="on $this $direction released"
-        //% group="Events"
-        //% weight=95
+        //% blockNamespace="fwdButtons" group="D-pad"
+        //% weight=105
         fwdOnReleased(direction: FwdDpadDirection, handler: () => void): void {
             this.subscriptions.push(
                 new FwdDpadSubscription(direction as number, false, handler)
@@ -195,8 +208,8 @@ namespace fwdSensors {
          */
         //% blockId=fwd_dpad_on_changed
         //% block="on $this changed"
-        //% group="Events"
-        //% weight=90
+        //% blockNamespace="fwdButtons" group="D-pad"
+        //% weight=100
         fwdOnChanged(handler: () => void): void {
             this.onButtonsChanged(handler)
         }
@@ -207,7 +220,7 @@ namespace fwdSensors {
          */
         //% blockId=fwd_dpad_raw
         //% block="$this raw button bitmask"
-        //% group="Advanced"
+        //% blockNamespace="fwdButtons" group="D-pad"
         //% weight=50
         fwdRawButtons(): number {
             return this.buttons()
