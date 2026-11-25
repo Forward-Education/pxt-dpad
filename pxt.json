@@ -1,11 +1,11 @@
 {
     "name": "pxt-dpad",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Forward Education D-Pad Module for Jacdac on micro:bit",
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "jacdac": "github:jacdac/pxt-jacdac#v1.9.42"
+        "jacdac": "github:jacdac/pxt-jacdac#v1.9.41"
     },
     "files": [
         "README.md",

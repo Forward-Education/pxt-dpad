@@ -61,6 +61,11 @@ project — even though nothing in its client is actually arcade-specific.
 of pxt-jacdac v1.9.42, kept close to the originals so they stay easy to diff when
 the pin is bumped. Put new behaviour in `fwd-dpad.ts`, not in those two files.
 
+The `jacdac` dependency is pinned to **v1.9.41**, the version the rest of the Forward
+Education library uses, so this extension can be combined with them (the FIFA kit
+extension bundles it). Two extensions pinning different Jacdac versions conflict in
+MakeCode. The vendored gamepad files are identical in v1.9.41 and v1.9.42.
+
 ### Per-direction events
 
 The Gamepad service only emits one "buttons changed" event carrying the whole
