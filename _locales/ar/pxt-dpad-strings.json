@@ -1,0 +1,19 @@
+{
+  "FwdDpadDirection.Down|block": "أسفل",
+  "FwdDpadDirection.Left|block": "يسار",
+  "FwdDpadDirection.Right|block": "يمين",
+  "FwdDpadDirection.Up|block": "أعلى",
+  "fwdButtons|block": "الأزرار",
+  "fwdSensors.FwdDpadClient.fwdAnyPressed|block": "أي اتجاه في $this مضغوط",
+  "fwdSensors.FwdDpadClient.fwdHorizontal|block": "الاتجاه الأفقي لـ $this",
+  "fwdSensors.FwdDpadClient.fwdIsPressed|block": "$this $direction مضغوط",
+  "fwdSensors.FwdDpadClient.fwdOnChanged|block": "عند تغيّر $this",
+  "fwdSensors.FwdDpadClient.fwdOnPressed|block": "عند ضغط $this $direction",
+  "fwdSensors.FwdDpadClient.fwdOnReleased|block": "عند تحرير $this $direction",
+  "fwdSensors.FwdDpadClient.fwdRawButtons|block": "قناع البتات الخام لأزرار $this",
+  "fwdSensors.FwdDpadClient.fwdVertical|block": "الاتجاه الرأسي لـ $this",
+  "fwdSensors.dpad1|block": "dpad1",
+  "{id:category}FwdButtons": "FwdButtons",
+  "{id:category}FwdSensors": "FwdSensors",
+  "{id:group}D-pad": "لوحة الاتجاهات"
+}

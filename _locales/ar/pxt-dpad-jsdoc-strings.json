@@ -1,0 +1,10 @@
+{
+  "fwdSensors.FwdDpadClient.fwdAnyPressed": "true ما دام أحد الاتجاهات الأربعة مضغوطًا.",
+  "fwdSensors.FwdDpadClient.fwdHorizontal": "الاتجاه الأفقي: -1 لليسار، 1 لليمين، 0 لا شيء.",
+  "fwdSensors.FwdDpadClient.fwdIsPressed": "true ما دام الاتجاه المحدد مضغوطًا.",
+  "fwdSensors.FwdDpadClient.fwdOnChanged": "يشغّل الكود كلما ضُغط اتجاه أو حُرّر.",
+  "fwdSensors.FwdDpadClient.fwdOnPressed": "يشغّل الكود عند ضغط أحد الاتجاهات.",
+  "fwdSensors.FwdDpadClient.fwdOnReleased": "يشغّل الكود عند تحرير أحد الاتجاهات.",
+  "fwdSensors.FwdDpadClient.fwdRawButtons": "قناع البتات الخام للاتجاهات المضغوطة. متقدم: يُفضَّل استخدام\nلبنة «مضغوط».",
+  "fwdSensors.FwdDpadClient.fwdVertical": "الاتجاه الرأسي: 1 للأعلى، -1 للأسفل، 0 لا شيء."
+}

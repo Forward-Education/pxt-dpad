@@ -1,6 +1,6 @@
 {
     "name": "pxt-dpad",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Forward Education D-Pad Module for Jacdac on micro:bit",
     "license": "MIT",
     "dependencies": {
@@ -12,7 +12,11 @@
         "main.ts",
         "gamepad-constants.ts",
         "gamepad-client.ts",
-        "fwd-dpad.ts"
+        "fwd-dpad.ts",
+        "_locales/fr/pxt-dpad-jsdoc-strings.json",
+        "_locales/fr/pxt-dpad-strings.json",
+        "_locales/ar/pxt-dpad-jsdoc-strings.json",
+        "_locales/ar/pxt-dpad-strings.json"
     ],
     "testFiles": [
         "test.ts"

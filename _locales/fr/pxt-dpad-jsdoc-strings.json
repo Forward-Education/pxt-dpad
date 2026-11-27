@@ -1,0 +1,10 @@
+{
+  "fwdSensors.FwdDpadClient.fwdAnyPressed": "Vrai tant que l'une des quatre directions est maintenue appuyée.",
+  "fwdSensors.FwdDpadClient.fwdHorizontal": "Direction horizontale : -1 pour gauche, 1 pour droite, 0 pour aucune.",
+  "fwdSensors.FwdDpadClient.fwdIsPressed": "Vrai tant que la direction indiquée est maintenue appuyée.",
+  "fwdSensors.FwdDpadClient.fwdOnChanged": "Exécute le code chaque fois qu'une direction est appuyée ou relâchée.",
+  "fwdSensors.FwdDpadClient.fwdOnPressed": "Exécute le code quand une direction est appuyée.",
+  "fwdSensors.FwdDpadClient.fwdOnReleased": "Exécute le code quand une direction est relâchée.",
+  "fwdSensors.FwdDpadClient.fwdRawButtons": "Le masque binaire brut des directions appuyées. Avancé : préférez le\nbloc « est appuyé ».",
+  "fwdSensors.FwdDpadClient.fwdVertical": "Direction verticale : 1 pour haut, -1 pour bas, 0 pour aucune."
+}

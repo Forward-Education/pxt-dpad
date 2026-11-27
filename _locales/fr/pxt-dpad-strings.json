@@ -1,0 +1,19 @@
+{
+  "FwdDpadDirection.Down|block": "bas",
+  "FwdDpadDirection.Left|block": "gauche",
+  "FwdDpadDirection.Right|block": "droite",
+  "FwdDpadDirection.Up|block": "haut",
+  "fwdButtons|block": "Boutons",
+  "fwdSensors.FwdDpadClient.fwdAnyPressed|block": "une direction de $this est appuyée",
+  "fwdSensors.FwdDpadClient.fwdHorizontal|block": "horizontale de $this",
+  "fwdSensors.FwdDpadClient.fwdIsPressed|block": "$this $direction est appuyé",
+  "fwdSensors.FwdDpadClient.fwdOnChanged|block": "quand $this change",
+  "fwdSensors.FwdDpadClient.fwdOnPressed|block": "quand $this $direction est appuyé",
+  "fwdSensors.FwdDpadClient.fwdOnReleased|block": "quand $this $direction est relâché",
+  "fwdSensors.FwdDpadClient.fwdRawButtons|block": "masque binaire brut des boutons de $this",
+  "fwdSensors.FwdDpadClient.fwdVertical|block": "verticale de $this",
+  "fwdSensors.dpad1|block": "dpad1",
+  "{id:category}FwdButtons": "FwdButtons",
+  "{id:category}FwdSensors": "FwdSensors",
+  "{id:group}D-pad": "Croix directionnelle"
+}
